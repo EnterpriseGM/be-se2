@@ -14,7 +14,7 @@ import javax.validation.constraints.NotNull;
 public class Discount {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(nullable = false)
+    @Column(name = "discount_id")
     private Long discountId;
 
     @Column

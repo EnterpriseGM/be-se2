@@ -90,7 +90,7 @@ public class ProductController {
             List<Category> categoryList = categoryService.getAllCategory();
             model.addAttribute("product", product);
             model.addAttribute("categories", categoryList);
-            model.addAttribute("discounts", discountService.getAllDiscounts());
+
             return "/product/productDetail";
         } catch (UserNotFoundException e) {
             e.printStackTrace();

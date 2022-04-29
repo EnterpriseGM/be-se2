@@ -27,9 +27,9 @@ SET time_zone = "+00:00";
 -- Cấu trúc bảng cho bảng `admin` `heroku_8c78d3b3896eb4a`
 --
 --
-drop database shopwebdb;
-create database shopwebdb;
-use shopwebdb;
+drop database `heroku_8c78d3b3896eb4a`;
+create database `heroku_8c78d3b3896eb4a`;
+use `heroku_8c78d3b3896eb4a`;
 --
 CREATE TABLE if not exists `admin` (
   `id` bigint(20) NOT NULL,
@@ -195,7 +195,7 @@ INSERT INTO `products` (`product_id`, `description`, `image_name`, `name`, `pric
 (30, 'Máy xay sinh tố Comet CM9954 được thiết kế đẹp mắt với kiểu dáng hiện đại, máy chạy êm nhờ chân đế chống trượt.', 'https://be-pr2.000webhostapp.com/productImages/6f2545047d07ae7e2e9efcdb756869e7.jpeg', 'Máy Xay Sinh Tố COMET', 355, 99, 6),
 (31, 'Phím cảm ứng điện tử COMET 4L - CM6838', 'https://be-pr2.000webhostapp.com/productImages/e6613f8e1846bf93c508412a127af356.jpeg', 'Nồi chiên không dầu', 1700, 99, 6);
 
-create table if not exists discount (
+create table if not exists `discount` (
   discount_id bigint(20) NOT NULL,
   discount_name varchar(255) DEFAULT NULL,
   discount_price int(11) DEFAULT NULL

@@ -26,10 +26,12 @@ public class DiscountService {
     }
 
     public Discount getDiscountByID(Long id) throws UserNotFoundException {
+
         Optional<Discount> result = discountRepository.findById(id);
-        if(result.isPresent()){
+        if (result.isPresent()) {
             return result.get();
         }
+
         throw new UserNotFoundException("Could not find any user with id" + id);
     }
 }
