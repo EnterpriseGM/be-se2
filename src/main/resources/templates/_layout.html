@@ -137,12 +137,14 @@
                         <span>Vouchers</span>
                     </a>
                 </li>
+                <div sec:authorize="hasRole('ADMIN')">
                 <li class="sub-menu">
                     <a href="javascript:;" class="" th:href="@{/staff-management/view-all-staffs}">
                         <i class="fa fa-percent"></i>
                         <span>Staffs</span>
                     </a>
                 </li>
+                </div>
                 <li class="sub-menu">
                     <a href="javascript:;" class="" th:href="@{/order/view-orders}">
                         <i class="fa fa-shopping-cart"></i>

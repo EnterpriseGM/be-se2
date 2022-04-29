@@ -44,7 +44,7 @@ public class Product {
     private int quantity;
     private String imageName;
 
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "product")
     @JsonIgnore
     private List<OrderDetail> orderDetails;
 

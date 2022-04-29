@@ -50,6 +50,7 @@ public class AuthController {
 
     }
 
+
     @GetMapping("/verify/{token}")
     public ResponseEntity<String> verifyAccount(@PathVariable("token") String token) {
         VerificationToken tokenObj = verificationTokenRepository.findVerificationTokenByToken(token);
